@@ -78,9 +78,11 @@ WSGI_APPLICATION = 'pollme.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': os.path.join(BASE_DIR, 'my.cnf'),
-        },
+        'NAME': 'drakichan',
+        'USER': 'root',
+        'PASSWORD': 'N@chi2003',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
